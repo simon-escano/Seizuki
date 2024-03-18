@@ -1,0 +1,40 @@
+* {
+    color: var(--white);
+}
+
+body {
+    background: url("../img/bg/black.png") no-repeat fixed;
+    background-size: cover;
+}
+
+.nav-btn {
+    color: var(--white);
+} .nav-btn:hover {
+    color: var(--black);
+}
+
+main {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#mint-box {
+    height: 100%;
+}
+
+#mint-top {
+    width: 100%;
+}
+
+#mint-top img {
+    width: 100%;
+    max-width: 28rem;
+}
+
+#mint-bottom {
+    width: 100%;
+}
+
+#connect-btn-2 {
+    text-transform: uppercase;
+}

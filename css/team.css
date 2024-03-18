@@ -1,0 +1,16 @@
+* {
+    color: var(--white);
+}
+
+body {
+    background: url("../img/bg/red.png") no-repeat fixed;
+    background-size: cover;
+}
+
+.nav-btn-active {
+    background-color: var(--white);
+    color: var(--primary-light);
+    font-weight: 700;
+} .nav-btn:hover {
+    color: var(--black);
+}

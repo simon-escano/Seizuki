@@ -1,0 +1,76 @@
+* {
+    color: var(--white);
+}
+
+body {
+    background: url("../img/bg/black.png") no-repeat fixed;
+    background-size: cover;
+}
+
+.nav-btn {
+    color: var(--white);
+} .nav-btn:hover {
+    color: var(--black);
+}
+
+main {
+    justify-content: flex-end;
+}
+
+.about-box {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    gap: 1rem;
+}
+
+.about-hdg {
+    font-size: 2rem;
+    font-weight: 700;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 1rem;
+}
+
+.about-hdg img {
+    max-height: 1.5rem;
+}
+
+.about-body {
+    max-width: 30rem;
+    gap: 0.5rem;
+}
+
+.about-body a {
+    color: var(--primary-light);
+    font-weight: 600;
+} .about-body a:hover {
+    color: var(--primary);
+}
+
+#collage {
+    gap: 1rem;
+    align-items: flex-end;
+    padding: 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 70%;
+}
+
+.collage-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1rem;
+} .collage-row img {
+    max-width: 16rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    cursor: pointer;
+} .collage-row img:hover {
+    opacity: 0.5;
+}
+
+.collage-row-even {
+    margin-right: -9rem;
+}
