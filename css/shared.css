@@ -7,6 +7,17 @@
     transition: all 0.15s;
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+} ::-webkit-scrollbar-track {
+    background-color: transparent;
+} ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-light);
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+} 
+
 .v-box {
     display: flex;
     flex-direction: column;
@@ -76,7 +87,7 @@ nav {
     font-weight: 600;
     font-size: 0.75rem;
     padding: 0.5rem 0.75rem;
-    border-radius: 9999px;
+    border-radius: 9999rem;
 } .nav-btn:hover {
     background-color: var(--white);
 } .nav-btn-active {
@@ -97,36 +108,108 @@ nav {
     opacity: 0.75;
 }
 
-#next-btn {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 4rem;
-} #next-btn:hover {
-    opacity: 0.75;
-}
-
 .blur-box {
     display: flex;
     background-color: var(--white-alpha);
     backdrop-filter: blur(0.75rem);
-    -webkit-backdrop-filter: blur(0.75rem);
     border-radius: 1rem;
     padding: 0.75rem;
     gap: 0.75rem;
 }
 
-.blur-box div {
+.blur-box > div {
     border-radius: 0.75rem;
 }
 
 .line-1 {
     border: none;
-    border-top: 1px solid var(--black-alpha);
+    border-top: 0.0625rem solid var(--black-alpha);
 }
 
 .line-2 {
-    margin: 0px 20px;
+    margin: 0px 1.25rem;
     border: none;
-    border-top: 1px solid var(--black-alpha);
+    border-top: 0.0625rem solid var(--black-alpha);
+}
+
+#connect-box {
+    opacity: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.3s ease;
+}
+
+#connect-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--black-alpha2);
+}
+
+#connect {
+    background-color: var(--white);
+    max-width: 24rem;    
+}
+
+#connect-hdg {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+#connect-hdg img {
+    width: 0.875rem;
+    cursor: pointer;
+}
+
+#connect-body {
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+#connect-choice {
+    border: 0.0625rem solid var(--black-alpha);
+    border-radius: 0.5rem;
+}
+
+.connect-network {
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+    align-items: center;
+    border-bottom: 0.1875rem solid var(--primary);
+    cursor: pointer;
+} .connect-network:hover {
+    background-color: var(--black-alpha);
+}
+
+.connect-network img {
+    width: 1.25rem;
+}
+
+#connect-providers {
+    padding: 1rem;
+}
+
+.connect-provider {
+    flex: 1;
+    padding: 0.875rem;
+    border: 0.0625rem solid var(--black-alpha);
+    border-radius: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+} .connect-provider:hover {
+    background-color: var(--black-alpha);
+}
+
+.connect-provider img {
+    width: 2.5rem;
+    border-radius: 0.5rem;
 }

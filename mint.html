@@ -32,18 +32,109 @@
         <button id="connect-btn">Connect Wallet</button>
     </nav>
 
-    <main class="h-box">
-        <div class="mint-box v-box">
-            <div id="mint-top" class="v-box">
-                <img src="img/model/1.png">
+    <main class="v-box">
+        <div id="mint-box" class="v-box">
+            <div id="mint-top" class="v-box blur-box">
+                <div id="mint-model">
+                    <img src="img/model/1.png">
+                </div>
+                <div id="mint-progress" class="v-box">
+                    <p>Total Minted | <b id="current-mints">1111</b><b>/3333</b></p>
+                    <hr class="line-1">
+                    <div id="mint-bar">
+                        <div></div>
+                    </div>
+                </div>
             </div>
-            <div id="mint-bottom" class="h-box">
+            <div id="mint-bottom" class="v-box">
+                <div id="mint-info" class="h-box">
+                    <div id="mint-stages" class="h-box">
+                        <div class="mint-stage v-box">
+                            <p class="mint-title">OG</p>
+                            <div class="mint-timer h-box">
+                                ENDS IN 
+                                <p class="dd">00d</p>
+                                <p class="hh">00h</p>
+                                <p class="mm">00m</p>
+                                <p class="ss">00s</p>
+                            </div>
+                            <b>MAX 1 TOKEN/S</b>
+                        </div>
+                        <div class="mint-stage v-box">
+                            <p class="mint-title">WL</p>
+                            <div class="mint-timer h-box">
+                                ENDS IN 
+                                <p class="dd">00d</p>
+                                <p class="hh">00h</p>
+                                <p class="mm">00m</p>
+                                <p class="ss">00s</p>
+                            </div>
+                            <b>MAX 1 TOKEN/S</b>
+                        </div>
+                        <div class="mint-stage v-box">
+                            <p class="mint-title">PUBLIC</p>
+                            <div class="mint-timer h-box">
+                                ENDS IN 
+                                <p class="dd">00d</p>
+                                <p class="hh">00h</p>
+                                <p class="mm">00m</p>
+                                <p class="ss">00s</p>
+                            </div>
+                            <b>MAX 1 TOKEN/S</b>
+                        </div>
+                    </div>
+                    <div id="mint-nums" class="v-box">
+                        <div class="mint-num-box v-box">
+                            <b>0.00 SOL</b>
+                            <p>Price</p>
+                        </div>
+                        <div class="mint-num-box v-box">
+                            <div class="h-box">
+                                <button id="mint-sub">-</button>
+                                <b id="your-mints">42</b>
+                                <button id="mint-add">+</button>
+                            </div>
+                            <p>Your Mints</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="connect-btn-2">Connect Wallet</button>
+            </div>
+        </div>
 
+        <div id="connect-box" class="h-box">
+            <div id="connect-bg"></div>
+            <div id="connect-blur-box" class="blur-box">
+                <div id="connect">
+                    <div id="connect-hdg" class="h-box">
+                        <p>Connect Wallet</p>
+                        <img id="close-btn" src="img/icon/close.svg">
+                    </div>
+                    <hr class="line-1">
+                    <div id="connect-body" class="v-box">
+                        <p>Use Sei and select a provider to connect your wallet with Seizuki.</p>
+                        <div id="connect-choice" class="v-box">
+                            <div class="h-box">
+                                <div class="connect-network h-box">
+                                    <img src="img/icon/sei.svg">
+                                    <p>Sei</p>
+                                </div>
+                            </div>
+                            <hr class="line-1">
+                            <div id="connect-providers" class="h-box">
+                                <div class="connect-provider h-box">
+                                    <img src="img/icon/compass.png">
+                                    <p>Compass Wallet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button id="connect-btn-2">Connect Wallet</button>
         </div>
     </main>
 
     <script src="js/shared.js"></script>
+    <script src="js/mint.js"></script>
 </body>
 </html>

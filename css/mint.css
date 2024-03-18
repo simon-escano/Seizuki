@@ -1,7 +1,3 @@
-* {
-    color: var(--white);
-}
-
 body {
     background: url("../img/bg/black.png") no-repeat fixed;
     background-size: cover;
@@ -14,27 +10,166 @@ body {
 }
 
 main {
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
 #mint-box {
+    color: var(--white);
+    flex: 1;
     height: 100%;
+    gap: 1rem;
+}
+
+#mint-box button {
+    color: var(--white);
 }
 
 #mint-top {
     width: 100%;
+    height: 60%;
+    gap: 0;
 }
 
-#mint-top img {
+#mint-model {
+    flex: 1;
+    aspect-ratio: 1;
     width: 100%;
-    max-width: 28rem;
+    height: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: var(--primary);
+    overflow: hidden;
+}
+
+#mint-model img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#mint-progress {
+    flex: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0  0.5rem 0.5rem;
+    gap: 0.5rem;
+    background-color: var(--white);
+    padding: 0.5rem;
+}
+
+#mint-progress p, #mint-progress b {
+    color: var(--black);
+}
+
+#mint-bar {
+    width: 100%;
+    background-color: var(--black-alpha2);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    cursor: pointer;
+} #mint-bar:hover {
+    opacity: 0.75;
+}
+
+#mint-bar div {
+    width: 33%;
+    background-color: var(--primary);
+    padding: 0.5rem;
 }
 
 #mint-bottom {
-    width: 100%;
+    height: 45%;
+    gap: 1rem;
+}
+
+#mint-info {
+    flex: 1;
+    gap: 1rem;
+}
+
+#mint-stages {
+    width: 70%;
+    max-width: 20rem;
+    background-color: var(--primary);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: 0.125rem solid var(--primary-light);
+    gap: 1rem;
+    overflow-x: scroll;
+}
+
+.mint-stage {
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 0.0625rem solid var(--white-alpha);
+    border-radius: 0.75rem;
+}
+
+.mint-title {
+    padding: 0.2rem 0.5rem;
+    background-color: var(--white-alpha);
+    border-radius: 9999px;
+}
+
+.mint-timer {
+    font-size: 0.75rem;
+    text-wrap: nowrap;
+    gap: 0.5rem;
+    color: var(--white-alpha);
+    align-items: center;
+}
+
+.mint-timer p {
+    color: var(--white);
+    padding: 0.5rem;
+    background-color: var(--black-alpha2);
+    border-radius: 0.5rem;
+}
+
+#mint-nums {
+    width: 30%;
+    flex: 1;
+    gap: 1rem;
+}
+
+.mint-num-box {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    gap: 0.5rem;
+    border: 0.125rem solid var(--primary-light);
+}
+
+.mint-num-box .h-box {
+    gap: 0.5rem;
+}
+
+.mint-num-box button {
+    aspect-ratio: 1;
+    width: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+    border-radius: 50%;
+} .mint-num-box button:hover {
+    background-color: var(--white-alpha);
 }
 
 #connect-btn-2 {
+    font-weight: 600;
+    font-size: 1rem;
     text-transform: uppercase;
+    background-color: var(--primary-light);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    border: 0.125rem solid var(--white-alpha);
+} #connect-btn-2:hover {
+    background-color: var(--primary);
 }

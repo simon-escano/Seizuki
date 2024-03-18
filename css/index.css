@@ -2,3 +2,12 @@ body {
     background: url("../img/bg/splash.png") no-repeat fixed;
     background-size: cover;
 }
+
+#next-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+} #next-btn:hover {
+    opacity: 0.75;
+}

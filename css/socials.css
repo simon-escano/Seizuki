@@ -21,6 +21,7 @@ main {
 
 .socials-cluster {
     background-color: var(--white);
+    border-radius: 0.5rem;
 }
 
 .socials-title {

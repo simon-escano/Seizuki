@@ -1,0 +1,20 @@
+body {
+    background: url("../img/bg/dark-red.png") no-repeat fixed;
+    background-size: cover;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    color: var(--white);
+} .nav-btn:hover {
+    color: var(--black);
+}
+
+#coming-soon-txt {
+    height: 2rem;
+    opacity: 0.5;
+}

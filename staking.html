@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seizuki | Staking</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/icon/seizuki_web-icon.svg">
+
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/staking.css">
+</head>
+<body>
+    <nav class="h-box">
+        <a id="home-btn" class="h-box" href="/">
+            <img src="img/icon/seizuki_logo_red.svg">
+        </a>
+        <div id="page-btns" class="h-box">
+            <a class="nav-btn" href="/about.html">About</a>
+            <a class="nav-btn" href="/team.html">Team</a>
+            <a class="nav-btn" href="/socials.html">Socials</a>
+            <a class="nav-btn" href="/mint.html">Mint</a>
+            <a class="nav-btn-active" href="/staking.html">Staking</a>
+        </div>
+        <button id="connect-btn">Connect Wallet</button>
+    </nav>
+
+    <main class="h-box">
+        <img id="coming-soon-txt" src="img/txt_coming-soon.svg">
+
+        <div id="connect-box" class="h-box">
+            <div id="connect-bg"></div>
+            <div id="connect-blur-box" class="blur-box">
+                <div id="connect">
+                    <div id="connect-hdg" class="h-box">
+                        <p>Connect Wallet</p>
+                        <img id="close-btn" src="img/icon/close.svg">
+                    </div>
+                    <hr class="line-1">
+                    <div id="connect-body" class="v-box">
+                        <p>Use Sei and select a provider to connect your wallet with Seizuki.</p>
+                        <div id="connect-choice" class="v-box">
+                            <div class="h-box">
+                                <div class="connect-network h-box">
+                                    <img src="img/icon/sei.svg">
+                                    <p>Sei</p>
+                                </div>
+                            </div>
+                            <hr class="line-1">
+                            <div id="connect-providers" class="h-box">
+                                <div class="connect-provider h-box">
+                                    <img src="img/icon/compass.png">
+                                    <p>Compass Wallet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/shared.js"></script>
+</body>
+</html>
