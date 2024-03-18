@@ -110,7 +110,7 @@ $(document).ready(() => {
                 $("#current-mints").text(mints);
                 $("#mint-bar div").css("width", `${(mints / 3333) * 100}%`);
             } else {
-                alert("Mint Unsuccessful");
+                alert("Mint Unsuccessful, Try again.");
             }
         } else {
             $("#connect-box").css('opacity', '1').css('pointer-events', 'auto');
