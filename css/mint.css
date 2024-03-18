@@ -106,6 +106,9 @@ main {
     padding: 1rem;
     border: 0.0625rem solid var(--white-alpha);
     border-radius: 0.75rem;
+    cursor: pointer;
+} .mint-stage:hover {
+    background-color: var(--white-alpha);
 }
 
 .mint-title {
