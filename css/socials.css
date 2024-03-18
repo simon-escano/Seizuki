@@ -22,6 +22,7 @@ main {
 .socials-cluster {
     background-color: var(--white);
     border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .socials-title {
@@ -34,6 +35,8 @@ main {
 .socials-item {
     gap: 1.25rem;
     padding: 0.875rem 1.25rem;
+} .socials-item:hover {
+    background-color: var(--black-alpha);
 }
 
 .socials-item img {
