@@ -6,10 +6,10 @@ timer = JSON.parse(localStorage.getItem('timer')) || {
 }
 
 $(document).ready(() => {
-    $(".dd").text(timer.dd + "d");
-    $(".hh").text(timer.hh + "h");
-    $(".mm").text(timer.mm + "m");
-    $(".ss").text(timer.ss + "s");
+    $(".dd").text(((timer.dd < 10) ? "0" : "") + timer.dd + "d");
+    $(".hh").text(((timer.hh < 10) ? "0" : "") + timer.hh + "h");
+    $(".mm").text(((timer.mm < 10) ? "0" : "") + timer.mm + "m");
+    $(".ss").text(((timer.ss < 10) ? "0" : "") + timer.ss + "s");
 
     if (wallet_connected) {
         $("#connect-btn-2").text("Mint");
@@ -55,10 +55,10 @@ $(document).ready(() => {
                 }
             }
         }
-        $(".dd").text(timer.dd + "d");
-        $(".hh").text(timer.hh + "h");
-        $(".mm").text(timer.mm + "m");
-        $(".ss").text(timer.ss + "s");
+        $(".dd").text(((timer.dd < 10) ? "0" : "") + timer.dd + "d");
+        $(".hh").text(((timer.hh < 10) ? "0" : "") + timer.hh + "h");
+        $(".mm").text(((timer.mm < 10) ? "0" : "") + timer.mm + "m");
+        $(".ss").text(((timer.ss < 10) ? "0" : "") + timer.ss + "s");
         localStorage.setItem('timer', JSON.stringify(timer));
     }, 1000);
 
