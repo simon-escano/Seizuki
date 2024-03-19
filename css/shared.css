@@ -219,9 +219,18 @@ nav {
 }
 
 @media only screen and (max-width: 715px) {
-    #page-btns {
+    nav {
+        padding: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-btn, .nav-btn-active {
+        font-size: 0.625rem;
+    }
+    
+    #connect-btn {
         display: none;
-        background-color: red;
     }
 }
 
