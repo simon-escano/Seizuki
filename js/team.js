@@ -1,7 +1,8 @@
 $(document).ready(() => {
     let is_scrolling = false;
+    locations = ["#title", "#core-team", "#assistants"];
     if (window.location.pathname.endsWith("team.html")) {
-        window.location.hash = "#slide-1";
+        window.location.hash = locations[0];
     }
     $("#team-slider-nav").on('wheel', function(e) {
         if (is_scrolling) return;
@@ -9,18 +10,16 @@ $(document).ready(() => {
         setTimeout(() => {
             is_scrolling = false;
         }, 750);
-
-        let currentSlide = Number(window.location.hash.charAt(window.location.hash.length - 1));
-        if (currentSlide == 0) currentSlide++;
+        let currentSlide = locations.indexOf(window.location.hash);
         if (e.originalEvent.deltaY > 0) {
-            if (currentSlide < 3) {
+            if (currentSlide < 2) {
                 currentSlide++;
             }
         } else {
-            if (currentSlide > 1) {
+            if (currentSlide > 0) {
                 currentSlide--;
             }
         }
-        window.location.hash = `#slide-${currentSlide}`;
+        window.location.hash = locations[currentSlide];
     });
 });
