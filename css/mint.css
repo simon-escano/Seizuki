@@ -17,6 +17,7 @@ main {
 }
 
 #mint-box {
+    z-index: -1;
     color: var(--white);
     flex: 1;
     height: 100%;
