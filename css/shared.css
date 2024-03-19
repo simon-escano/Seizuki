@@ -224,3 +224,16 @@ nav {
         background-color: red;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    #connect-blur-box {
+        position: fixed;
+        left: 1.25rem;
+        right: 1.25rem;
+    }
+
+    #connect {
+        max-width: none;
+        width: 100%;
+    }
+}
