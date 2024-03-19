@@ -15,7 +15,7 @@ main {
 }
 
 #about-box {
-    background-color: var(--black-alpha2);
+    background-color: var(--black-alpha3);
     padding: 2rem;
     border-radius: 2rem;
     backdrop-filter: blur(1rem);
