@@ -23,7 +23,7 @@ main {
 @media only screen and (max-width: 500px) {
     #coming-soon-txt {
         width: 100%;
-        padding: 0 1rem;
+        padding: 0 2.25rem;
         opacity: 0.5;
     }
 }
