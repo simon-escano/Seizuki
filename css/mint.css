@@ -1,5 +1,6 @@
 body {
     background: url("../img/bg/black.png") no-repeat fixed;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -175,4 +176,15 @@ main {
     border: 0.125rem solid var(--white-alpha);
 } #connect-btn-2:hover {
     background-color: var(--primary);
+}
+
+@media only screen and (max-width: 500px) {
+    #mint-box {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .mint-num-box {
+        overflow: hidden;
+    }
 }

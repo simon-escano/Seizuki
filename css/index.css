@@ -1,6 +1,7 @@
 body {
     background: url("../img/bg/splash.png") no-repeat fixed;
     background-size: cover;
+    background-position: center center;
 }
 
 #next-btn {

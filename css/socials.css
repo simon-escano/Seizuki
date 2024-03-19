@@ -1,5 +1,6 @@
 body {
     background: url("../img/bg/beige.png") no-repeat fixed;
+    background-position: center center;
     background-size: cover;
 }
 

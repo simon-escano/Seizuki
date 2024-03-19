@@ -1,5 +1,6 @@
 body {
     background: url("../img/bg/black.png") no-repeat fixed;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -13,7 +14,11 @@ main {
     justify-content: flex-end;
 }
 
-.about-box {
+#about-box {
+    background-color: var(--black-alpha2);
+    padding: 2rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(1rem);
     color: var(--white);
     position: fixed;
     bottom: 2rem;
@@ -21,7 +26,7 @@ main {
     gap: 1rem;
 }
 
-.about-hdg {
+#about-hdg {
     font-size: 2rem;
     font-weight: 700;
     align-items: center;
@@ -29,34 +34,32 @@ main {
     gap: 1rem;
 }
 
-.about-hdg img {
+#about-hdg img {
     max-height: 1.5rem;
 }
 
-.about-body {
+#about-body {
     max-width: 30rem;
     gap: 0.5rem;
 }
 
-.about-body a {
+#about-body a {
     color: var(--primary-light);
     font-weight: 600;
-} .about-body a:hover {
+} #about-body a:hover {
     color: var(--primary);
 }
 
 #collage {
     gap: 1rem;
     align-items: flex-end;
-    padding: 2rem;
+    padding: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
-    max-width: 70%;
 }
 
 .collage-row {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-end;
     gap: 1rem;
 } .collage-row img {
@@ -70,4 +73,14 @@ main {
 
 .collage-row-even {
     margin-right: -9rem;
+}
+
+@media only screen and (max-width: 1250px) {
+    #about-box {
+        right: 2rem;
+    }
+
+    #about-hdg {
+        display: none;
+    }
 }

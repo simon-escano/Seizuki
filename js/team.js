@@ -3,7 +3,7 @@ $(document).ready(() => {
     if (window.location.pathname.endsWith("team.html")) {
         window.location.hash = "#slide-1";
     }
-    $("#team-slider").on('wheel', function(e) {
+    $("#team-slider-nav").on('wheel', function(e) {
         if (is_scrolling) return;
         is_scrolling = true;
         setTimeout(() => {
